@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/linearMenu"
+    android:background="#e6e6e6"
+    android:divider="@drawable/testdrawable"
+    android:orientation="vertical"
+    android:showDividers="middle|end|beginning">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:id="@+id/img_check_tatca"
+            android:visibility="visible"
+            android:src="@drawable/icon_checked_green"/>
+        <TextView
+            android:id="@+id/txt_tatca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Tất cả cửa hàng"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:background="#e6e6e6"
+              android:divider="@drawable/testdrawable"
+              android:orientation="vertical"
+              android:showDividers="middle|end|beginning"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<LinearLayout
+    android:weightSum="2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_ToanQuoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_toanquoc"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:src="@drawable/icon_checked_green"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/txt_toanquoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toàn Quốc"
+            android:textColor="#FF0000"
+            android:textSize="15sp"/>
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/ll_doitinhthanh"
+    android:layout_width="match_parent"
+    android:gravity="right"
+    android:layout_weight="1"
+    android:layout_marginRight="30dp"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/boder_radius"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:src="@drawable/icon_change_city"/>
+
+        <TextView
+            android:id="@+id/txt_doitnhthanh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Đổi tỉnh thành"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
